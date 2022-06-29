@@ -33,24 +33,25 @@ const Teddy = new User('Teddy', 'Teddy@somemail.com')
 const John = new User('John', 'John@gmail.com')
 const Mary = new User('Mary', 'Mary@outlook.com')
 
-Teddy.makeDeposit(100);
-Teddy.makeDeposit(200);
-Teddy.makeDeposit(500);
-Teddy.makeWithdrawl(50);
-console.log(Teddy.displayBalance());
+Teddy.makeDeposit(100).makeDeposit(100).displayBalance();
+John.makeDeposit(200).makeDeposit(200).displayBalance();
+Mary.makeDeposit(300).makeDeposit(300).displayBalance();
 
 
-John.makeDeposit(100);
-John.makeDeposit(1000);
-John.makeWithdrawl(200);
-console.log(John.displayBalance());
+// console.log(Teddy.displayBalance());
 
-Mary.makeDeposit(100);
-Mary.makeWithdrawl(200);
-Mary.makeWithdrawl(500);
-Mary.makeWithdrawl(50);
-console.log(Mary.displayBalance());
 
-Teddy.transfer(100, Mary);
-console.log(Teddy.displayBalance());
-console.log(Mary.displayBalance());
+// John.makeDeposit(100);
+// John.makeDeposit(1000);
+// John.makeWithdrawl(200);
+// console.log(John.displayBalance());
+
+// Mary.makeDeposit(100);
+// Mary.makeWithdrawl(200);
+// Mary.makeWithdrawl(500);
+// Mary.makeWithdrawl(50);
+// console.log(Mary.displayBalance());
+
+// Teddy.transfer(100, Mary);
+// console.log(Teddy.displayBalance());
+// console.log(Mary.displayBalance());
